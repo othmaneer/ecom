@@ -1,0 +1,28 @@
+body {
+
+
+}
+
+#az{
+    padding-RIGHT: 100px;
+
+
+}
+#search_bar
+{
+ margin-RIGHT: 300px;
+ margin-left: 30px;
+}
+
+#progress{
+
+//background-color: blue;
+margin-top:20px;
+padding-left: 400px;
+margin-bottom:15px;
+}
+#footer
+{
+
+background-color: gray;
+}

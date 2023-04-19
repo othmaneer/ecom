@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block contenue%}
+
+<h1 class="text-primary" id="log_user_h1">Connexion...</h1> {{ msg }}
+<div class="form-outline mb-4">
+
+
+     <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+         <button type="submit" class="btn btn-primary col-12">Ajouter</button>
+    </form>
+</div>
+ <br>
+
+
+    <div class="text-center">
+    <p>Not a member? <a href="{% url 'reverserUser'%}">Register</a></p>
+
+  </div>
+{%endblock%}

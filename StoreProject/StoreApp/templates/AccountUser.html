@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block contenue%}
+    {% load static %}
+
+<h1>Créer votre Compte</h1>
+
+ <form method="post" id="ajouter">
+        {% csrf_token %}
+        {{ form.as_p }}
+         <button type="submit" class="btn btn-primary col-12">Ajouter</button>
+    </form>
+{%endblock%}

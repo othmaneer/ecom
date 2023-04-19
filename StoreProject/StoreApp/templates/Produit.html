@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block contenue%}
+
+<h1>Portail Produits</h1>
+<h1>Ajouter votre Produit</h1>
+
+ <form method="post" id="ajouter" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+         <button type="submit" class="btn btn-primary col-12">Ajouter</button>
+    </form>
+{%endblock%}
